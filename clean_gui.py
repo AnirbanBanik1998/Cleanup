@@ -15,11 +15,11 @@ e.place(relx=0.28, rely=0.10, relheight=0.10
 obj = clean.Clean()
 
 def callback(b):
-s = e.get()
+    s = e.get()
     if s:
         if b:
             obj.all(s)
-    else:
+        else:
             try:
                 obj.current(s)
             except Exception as err:
